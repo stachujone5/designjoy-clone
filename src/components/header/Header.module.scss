@@ -1,0 +1,7 @@
+.container {
+	width: calc(min(var(--max-width), 90vw));
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+}
