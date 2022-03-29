@@ -1,0 +1,30 @@
+.welcome {
+	text-align: center;
+	background-color: var(--clr-header);
+	padding: var(--spacer-7) 0;
+	h1 {
+		font-size: var(--fz-8);
+		font-weight: 900;
+		letter-spacing: 0.05em;
+		max-width: 14rem;
+		margin: var(--spacer-2) auto;
+		line-height: 1em;
+	}
+
+	h2 {
+		font-weight: 400;
+		font-size: var(--fz-3);
+		margin-bottom: var(--spacer-2);
+	}
+
+	p {
+		font-weight: 100;
+		font-size: var(--fz-1);
+		margin: var(--spacer-2) 0;
+	}
+
+	svg {
+		color: #ffc0cb;
+		transform: translateY(20%);
+	}
+}

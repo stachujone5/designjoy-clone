@@ -3,11 +3,8 @@
 	background-color: var(--clr-header);
 
 	.container {
-		width: calc(min(var(--max-width), 90vw));
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: 0 auto;
-		padding: var(--spacer-5) var(--spacer-3);
 	}
 }

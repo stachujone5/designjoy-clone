@@ -5,7 +5,7 @@ import classes from './Header.module.scss'
 export const Header = () => {
 	return (
 		<header className={classes.header}>
-			<div className={classes.container}>
+			<div className={`${classes.container} container`}>
 				<Logo />
 				<Nav />
 			</div>

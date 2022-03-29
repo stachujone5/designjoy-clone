@@ -21,16 +21,16 @@ export const Nav = () => {
 				<div ref={navRef} className={classes.container}>
 					<ul>
 						<li>
-							<a href='#'>Latest projects</a>
+							<a href='#projects'>Latest projects</a>
 						</li>
 						<li>
-							<a href='#Pricing'>Pricing</a>
+							<a href='#pricing'>Pricing</a>
 						</li>
 						<li>
-							<a href='#'>FAQs</a>
+							<a href='#faq'>FAQs</a>
 						</li>
 						<li>
-							<a href='#'>Login</a>
+							<a href='#login'>Login</a>
 						</li>
 					</ul>
 				</div>

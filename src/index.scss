@@ -10,6 +10,7 @@
 	--clr-background: #fff;
 	--clr-background-accent: #e1eaf4;
 	--clr-header: #f3e1d7;
+	--clr-nav-hover: #ea552b;
 
 	--max-width: 75rem;
 
@@ -24,6 +25,7 @@
 
 	--br: 1.5rem;
 
+	--fz-05: 0.85rem;
 	--fz-1: 1rem;
 	--fz-2: calc(var(--fz-1) * 1.25);
 	--fz-3: calc(var(--fz-1) * 1.5);
@@ -36,6 +38,7 @@
 	@media (min-width: 30rem) {
 		--spacer-1: 0.3em;
 		--fz-1: 1.2rem;
+		--fz-05: 1rem;
 	}
 }
 
@@ -75,4 +78,11 @@ body {
 	background-color: var(--clr-background);
 	color: #000;
 	font-size: var(--fz-1);
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	padding: var(--spacer-4) var(--spacer-2);
+	width: calc(min(var(--max-width), 90vw));
+	margin: 0 auto;
 }
