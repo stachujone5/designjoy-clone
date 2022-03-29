@@ -3,8 +3,10 @@ import classes from './Logo.module.scss'
 
 export const Logo = () => {
 	return (
-		<div>
-			<img src={logo} alt='Designoy logo' />
+		<div className={classes['logo-container']}>
+			<a href='#home'>
+				<img src={logo} alt='Designjoy logo' />
+			</a>
 		</div>
 	)
 }

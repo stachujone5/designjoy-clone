@@ -7,9 +7,9 @@
 }
 
 :root {
-	--clr-background: #212121;
-	--clr-accent: #6930c3;
-	--clr-err: rgb(168, 47, 47);
+	--clr-background: #fff;
+	--clr-background-accent: #e1eaf4;
+	--clr-header: #f3e1d7;
 
 	--max-width: 75rem;
 
@@ -57,10 +57,11 @@ button {
 img {
 	display: block;
 	width: 100%;
+	height: 100%;
 }
 
 a {
-	color: #fff;
+	color: inherit;
 	text-decoration: none;
 }
 
@@ -72,6 +73,6 @@ input {
 
 body {
 	background-color: var(--clr-background);
-	color: #fff;
+	color: #000;
 	font-size: var(--fz-1);
 }

@@ -1,7 +1,40 @@
 .burger {
-	font-size: 3rem;
+	font-size: var(--fz-4);
+	cursor: pointer;
+
+	@media (min-width: 60rem) {
+		display: none;
+	}
 }
 
 .nav {
-	display: none;
+	position: absolute;
+	height: 0;
+	overflow: hidden;
+	top: 100%;
+	left: 0;
+	right: 0;
+	transition: height 0.3s;
+	.container {
+		width: calc(min(var(--max-width), 90vw));
+		padding: var(--spacer-5) var(--spacer-3);
+		margin: 0 auto;
+
+		li {
+			margin: var(--spacer-1) 0;
+		}
+	}
+
+	@media (min-width: 60rem) {
+		position: initial;
+		.container {
+			width: fit-content;
+			padding: 0;
+		}
+
+		ul {
+			display: flex;
+			gap: var(--spacer-4);
+		}
+	}
 }
