@@ -1,5 +1,7 @@
 .welcome {
+	position: relative;
 	text-align: center;
+	z-index: 1;
 	background-color: var(--clr-header);
 	padding: var(--spacer-7) 0;
 	h1 {
@@ -26,5 +28,44 @@
 	svg {
 		color: #ffc0cb;
 		transform: translateY(20%);
+	}
+
+	.welcome1 {
+		position: absolute;
+		top: 0;
+		left: -5%;
+		width: 30%;
+		height: 30%;
+		z-index: -1;
+		@media (min-width: 40rem) {
+			width: 60%;
+			height: 60%;
+			left: -15%;
+		}
+		@media (min-width: 60rem) {
+			width: 80%;
+			height: 80%;
+			left: -20%;
+		}
+	}
+
+	.welcome2 {
+		position: absolute;
+		width: 40%;
+		height: 40%;
+		right: -5%;
+		top: 40%;
+		z-index: -1;
+
+		@media (min-width: 40rem) {
+			width: 60%;
+			height: 60%;
+			right: -15%;
+		}
+		@media (min-width: 60rem) {
+			width: 80%;
+			height: 80%;
+			right: -20%;
+		}
 	}
 }
