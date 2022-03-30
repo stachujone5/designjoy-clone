@@ -18,17 +18,28 @@
 	font-weight: 900;
 	font-size: var(--fz-05);
 	letter-spacing: 0.05em;
+	background-color: #fff;
 	.container {
 		width: calc(min(var(--max-width), 90vw));
 		padding: var(--spacer-5) var(--spacer-3);
 		margin: 0 auto;
 
-		a {
-			margin: var(--spacer-1) 0;
-			transition: color 0.3s;
+		li {
+			&:first-child {
+				margin-top: 0;
+			}
 
-			&:hover {
-				color: var(--clr-nav-hover);
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			margin: var(--spacer-5) 0;
+			a {
+				transition: color 0.3s;
+
+				&:hover {
+					color: var(--clr-nav-hover);
+				}
 			}
 		}
 	}
@@ -36,9 +47,15 @@
 	@media (min-width: 60rem) {
 		height: auto !important;
 		position: initial;
+		background-color: initial;
+
 		.container {
 			width: fit-content;
 			padding: 0;
+
+			li {
+				margin: 0;
+			}
 		}
 
 		ul {
