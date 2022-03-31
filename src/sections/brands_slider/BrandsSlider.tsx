@@ -14,7 +14,7 @@ export const BrandsSlider = () => {
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			if (transform < 50) {
+			if (transform <= 100) {
 				setTransform(prevTransform => prevTransform + 0.025)
 			} else {
 				setTransform(0)
@@ -26,54 +26,58 @@ export const BrandsSlider = () => {
 
 	return (
 		<section className={classes.slider}>
-			<div className={classes['images-container']} style={{ transform: `translate(-${transform}%)` }}>
-				<div className={classes.brand}>
-					<img src={img1} alt='' />
+			<div className={classes.wrapper}>
+				<div className={classes['images-container']} style={{ transform: `translate(-${transform}%)` }}>
+					<div className={classes.brand}>
+						<img src={img1} alt='' />
+					</div>
+					<div className={classes.brand}>
+						<img src={img2} alt='' />
+					</div>
+					<div className={classes.brand}>
+						<img src={img3} alt='' />
+					</div>
+					<div className={classes.brand}>
+						<img src={img4} alt='' />
+					</div>
+					<div className={classes.brand}>
+						<img src={img5} alt='' />
+					</div>
+					<div className={classes.brand}>
+						<img src={img6} alt='' />
+					</div>
+					<div className={classes.brand}>
+						<img src={img7} alt='' />
+					</div>
+					<div className={classes.brand}>
+						<img src={img8} alt='' />
+					</div>
 				</div>
-				<div className={classes.brand}>
-					<img src={img2} alt='' />
-				</div>
-				<div className={classes.brand}>
-					<img src={img3} alt='' />
-				</div>
-				<div className={classes.brand}>
-					<img src={img4} alt='' />
-				</div>
-				<div className={classes.brand}>
-					<img src={img5} alt='' />
-				</div>
-				<div className={classes.brand}>
-					<img src={img6} alt='' />
-				</div>
-				<div className={classes.brand}>
-					<img src={img7} alt='' />
-				</div>
-				<div className={classes.brand}>
-					<img src={img8} alt='' />
-				</div>
-				<div className={classes.brand}>
-					<img src={img1} alt='' />
-				</div>
-				<div className={classes.brand}>
-					<img src={img2} alt='' />
-				</div>
-				<div className={classes.brand}>
-					<img src={img3} alt='' />
-				</div>
-				<div className={classes.brand}>
-					<img src={img4} alt='' />
-				</div>
-				<div className={classes.brand}>
-					<img src={img5} alt='' />
-				</div>
-				<div className={classes.brand}>
-					<img src={img6} alt='' />
-				</div>
-				<div className={classes.brand}>
-					<img src={img7} alt='' />
-				</div>
-				<div className={classes.brand}>
-					<img src={img8} alt='' />
+				<div className={classes['images-container']} style={{ transform: `translate(-${transform}%)` }}>
+					<div className={classes.brand}>
+						<img src={img1} alt='' />
+					</div>
+					<div className={classes.brand}>
+						<img src={img2} alt='' />
+					</div>
+					<div className={classes.brand}>
+						<img src={img3} alt='' />
+					</div>
+					<div className={classes.brand}>
+						<img src={img4} alt='' />
+					</div>
+					<div className={classes.brand}>
+						<img src={img5} alt='' />
+					</div>
+					<div className={classes.brand}>
+						<img src={img6} alt='' />
+					</div>
+					<div className={classes.brand}>
+						<img src={img7} alt='' />
+					</div>
+					<div className={classes.brand}>
+						<img src={img8} alt='' />
+					</div>
 				</div>
 			</div>
 		</section>

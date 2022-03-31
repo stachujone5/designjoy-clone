@@ -1,11 +1,18 @@
 .slider {
 	background-color: #000;
-	.images-container {
-		width: 200%;
+	padding: var(--spacer-2) 0;
+
+	.wrapper {
+		width: 400%;
 		display: flex;
-		.brand {
-			margin: 0 var(--spacer-5);
-			width: 20%;
+		.images-container {
+			display: flex;
+			.brand {
+				margin: 0 0.5em;
+				@media (min-width: 60rem) {
+					margin: 0 1em;
+				}
+			}
 		}
 	}
 }
