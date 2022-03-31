@@ -8,16 +8,24 @@ import { useEffect, useState } from 'react'
 
 export const ProjectsSlider = () => {
 	const [transform, setTransform] = useState(0)
-	const [scrollDirection, setScrollDirection] = useState('down')
-	const transformValue = 5
-	const handleSlider = (e: Event) => {
-		setTransform(prevTransform => prevTransform + transformValue)
-	}
+	const transformValue = 4
 
 	useEffect(() => {
-		window.addEventListener('scroll', e => handleSlider(e))
+		let oldScrollY = 0
 
-		return () => window.removeEventListener('scroll', e => handleSlider(e))
+		const handleSlider = () => {
+			if (window.scrollY > oldScrollY) {
+				setTransform(prevTransform => prevTransform - transformValue)
+			} else {
+				setTransform(prevTransform => prevTransform + transformValue)
+			}
+
+			oldScrollY = window.scrollY
+		}
+
+		window.addEventListener('scroll', handleSlider)
+
+		return () => window.removeEventListener('scroll', handleSlider)
 	}, [])
 
 	return (
