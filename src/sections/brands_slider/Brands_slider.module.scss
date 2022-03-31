@@ -1,0 +1,11 @@
+.slider {
+	background-color: #000;
+	.images-container {
+		width: 200%;
+		display: flex;
+		.brand {
+			margin: 0 var(--spacer-5);
+			width: 20%;
+		}
+	}
+}

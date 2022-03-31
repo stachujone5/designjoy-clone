@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react'
 
 export const ProjectsSlider = () => {
 	const [transform, setTransform] = useState(0)
-	const transformValue = 4
+	const transformValue = 0.5
 
 	useEffect(() => {
 		let oldScrollY = 0
@@ -30,7 +30,7 @@ export const ProjectsSlider = () => {
 
 	return (
 		<section className={classes.slider}>
-			<div style={{ transform: `translate(${transform}px)` }} className={classes['images-container']}>
+			<div style={{ transform: `translate(${transform}%)` }} className={classes['images-container']}>
 				<img src={img1} alt='Img of project made by designjoy' />
 				<img src={img2} alt='Img of project made by designjoy' />
 				<img src={img3} alt='Img of project made by designjoy' />

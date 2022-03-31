@@ -6,8 +6,12 @@
 		display: flex;
 		gap: var(--spacer-3);
 		img {
-			width: 20%;
+			width: 30%;
 			transition: transform 0.3s, box-shadow 0.3s;
+
+			@media (min-width: 60rem) {
+				width: 20%;
+			}
 
 			&:hover {
 				box-shadow: 8px 8px 24px 5px rgba(66, 68, 90, 0.3);
