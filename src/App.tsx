@@ -5,7 +5,9 @@ export const App = () => {
 	return (
 		<>
 			<Header />
-			<Welcome />
+			<main>
+				<Welcome />
+			</main>
 		</>
 	)
 }

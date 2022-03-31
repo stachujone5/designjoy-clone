@@ -1,5 +1,5 @@
 import { Logo } from '../logo/Logo'
-import { Nav } from '../Nav/Nav'
+import { Nav } from '../nav/Nav'
 import classes from './Header.module.scss'
 
 export const Header = () => {

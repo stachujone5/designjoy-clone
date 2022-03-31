@@ -10,10 +10,10 @@ export const Welcome = () => {
 			<img src={welcome1} alt='' className={classes.welcome1} />
 			<img src={welcome2} alt='' className={classes.welcome2} />
 			<div className='container'>
-				<h1>A design agency with a twist</h1>
-				<h2>Design subscriptions to scale your business.</h2>
+				<h1 className={classes.heading}>A design agency with a twist</h1>
+				<h2 className={classes.subheading}>Design subscriptions to scale your business.</h2>
 				<Button href='#plans'>See plans</Button>
-				<p>Designs you'll {<AiFillHeart />}, guaranteed</p>
+				<p className={classes['header-text']}>Designs you'll {<AiFillHeart />}, guaranteed</p>
 			</div>
 		</section>
 	)
