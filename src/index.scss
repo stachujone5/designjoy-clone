@@ -74,12 +74,15 @@ input {
 	border: none;
 }
 
+section {
+	overflow: hidden;
+}
+
 body {
 	background-color: var(--clr-background);
 	color: #000;
 	font-size: var(--fz-1);
 	font-family: 'Roboto', sans-serif;
-	overflow: hidden;
 }
 
 .container {

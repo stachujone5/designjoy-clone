@@ -4,7 +4,6 @@
 	z-index: 1;
 	background-color: var(--clr-header);
 	padding: var(--spacer-7) 0;
-	overflow: hidden;
 	.heading {
 		font-size: var(--fz-8);
 		font-weight: 900;
@@ -15,6 +14,7 @@
 
 		@media (min-width: 80rem) {
 			font-size: 5rem;
+			max-width: 50rem;
 		}
 	}
 
