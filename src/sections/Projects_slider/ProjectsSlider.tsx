@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react'
 
 export const ProjectsSlider = () => {
 	const [transform, setTransform] = useState(0)
-	const transformValue = 0.5
+	const transformValue = 0.1
 
 	useEffect(() => {
 		let oldScrollY = 0

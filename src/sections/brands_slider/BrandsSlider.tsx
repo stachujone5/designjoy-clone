@@ -15,7 +15,7 @@ export const BrandsSlider = () => {
 	useEffect(() => {
 		const interval = setInterval(() => {
 			if (transform <= 100) {
-				setTransform(prevTransform => prevTransform + 0.025)
+				setTransform(prevTransform => prevTransform + 0.05)
 			} else {
 				setTransform(0)
 			}
