@@ -1,24 +1,6 @@
 .why-us {
-	padding: var(--spacer-4) 0;
-	background-color: #fff;
-
-	h1 {
-		font-size: var(--fz-8);
-		font-weight: 900;
-		text-align: center;
-		line-height: 1em;
-		max-width: 40rem;
-		margin: 0 auto;
-	}
-
-	h2 {
-		font-size: var(--fz-3);
-		font-weight: 400;
-		text-align: center;
-		max-width: 40rem;
-		margin: var(--spacer-3) auto;
-	}
-
+	padding: var(--spacer-5) 0 var(--spacer-8);
+	background-color: #f8f8f8;
 	.icons-box {
 		.icon {
 			display: flex;
@@ -30,6 +12,10 @@
 			svg {
 				margin-bottom: var(--spacer-1);
 				font-size: var(--fz-8);
+				transition: 0.3s;
+				&:hover {
+					transform: scale(1.2);
+				}
 			}
 
 			p {
@@ -46,12 +32,29 @@
 	}
 
 	.box {
-		background-color: var(--clr-header);
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		background-color: var(--clr-header);
 		padding: 3em;
+
+		.decoration {
+			position: absolute;
+			height: auto;
+		}
+
+		.d1 {
+			bottom: 5%;
+			left: -5%;
+			width: 25%;
+		}
+
+		.d2 {
+			right: -5%;
+			top: -5%;
+		}
 
 		h3 {
 			font-size: var(--fz-5);
@@ -61,7 +64,7 @@
 			max-width: 35rem;
 		}
 		svg {
-			color: rgb(226, 15, 15);
+			color: rgb(189, 93, 15);
 			font-size: 4rem;
 		}
 		img {
@@ -73,8 +76,13 @@
 				width: 30%;
 				max-width: 7rem;
 			}
+
 			h3 {
 				margin: var(--spacer-1) 0 var(--spacer-2);
+			}
+
+			.decoration {
+				max-width: 12rem;
 			}
 		}
 	}

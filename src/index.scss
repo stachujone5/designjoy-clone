@@ -10,6 +10,7 @@
 	--clr-background: #fff;
 	--clr-background-accent: #e1eaf4;
 	--clr-header: #f3e1d7;
+	--clr-section-blue: #dbe4ed;
 	--clr-nav-hover: #ea552b;
 
 	--max-width: 75rem;
@@ -76,6 +77,16 @@ input {
 
 section {
 	overflow: hidden;
+
+	h1 {
+		text-align: center;
+		font-weight: 900;
+	}
+
+	h2 {
+		text-align: center;
+		font-weight: 400;
+	}
 }
 
 body {
