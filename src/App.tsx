@@ -1,4 +1,5 @@
 import { Header } from './components/header/Header'
+import { Benefits } from './sections/benefits/Benefits'
 import { BrandsSlider } from './sections/brands_slider/BrandsSlider'
 import { NeverGoBack } from './sections/never_go_back/NeverGoBack'
 import { ProjectsSlider } from './sections/projects_slider/ProjectsSlider'
@@ -15,6 +16,7 @@ export const App = () => {
 				<BrandsSlider />
 				<WhyUs />
 				<NeverGoBack />
+				<Benefits />
 			</main>
 		</>
 	)

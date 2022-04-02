@@ -4,6 +4,10 @@
 	position: relative;
 	overflow: visible;
 
+	@media (min-width: 80rem) {
+		padding: var(--spacer-7) 0 9em;
+	}
+
 	.info {
 		display: flex;
 		flex-direction: column;
@@ -91,20 +95,43 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		width: auto;
-		height: 15%;
+		height: 8%;
+
+		@media (min-width: 50rem) {
+			height: 10%;
+		}
+		@media (min-width: 70rem) {
+			height: 15%;
+		}
 	}
 
 	.d2 {
 		width: auto;
-		height: 35%;
-		top: -10%;
+		height: 12%;
+		top: -5%;
 		left: 0;
+		@media (min-width: 50rem) {
+			height: 20%;
+			top: -10%;
+		}
+		@media (min-width: 70rem) {
+			height: 35%;
+			top: -10%;
+		}
 	}
 
 	.d3 {
 		width: auto;
-		height: 40%;
-		top: -10%;
+		height: 8%;
+		top: -5%;
 		right: 0;
+		@media (min-width: 50rem) {
+			height: 20%;
+			top: -10%;
+		}
+		@media (min-width: 70rem) {
+			height: 40%;
+			top: -10%;
+		}
 	}
 }
