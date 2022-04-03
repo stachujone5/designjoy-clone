@@ -1,8 +1,8 @@
 import classes from './SectionHeader.module.scss'
 
 interface SectionHeaderProps {
-	h1: string
-	h2: string
+	h1?: string
+	h2?: string
 }
 
 export const SectionHeader = ({ h1, h2 }: SectionHeaderProps) => {
