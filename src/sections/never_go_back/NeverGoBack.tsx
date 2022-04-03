@@ -1,10 +1,9 @@
 import classes from './NeverGoBack.module.scss'
-import ceo from '../../images/NeverCeo.jpg'
 import divider from '../../images/NeverDivider.svg'
 import never1 from '../../images/Never1.svg'
 import never2 from '../../images/Never2.svg'
-import { MdFormatQuote } from 'react-icons/md'
 import { SectionHeader } from '../../components/section_header/SectionHeader'
+import { NeverBox } from './never_box/NeverBox'
 
 export const NeverGoBack = () => {
 	return (
@@ -16,19 +15,8 @@ export const NeverGoBack = () => {
 					delivered so fast that it will blow your mind.'
 				/>
 				<div className={classes.info}>
-					<div className={classes.box}>
-						<MdFormatQuote />
-						<h3>Design is everything and these guys have nailed it.</h3>
-						<div className={classes['box-footer']}>
-							<div className={classes.ceo}>
-								<img src={ceo} alt='' />
-							</div>
-							<p>
-								Kevin O'Leary. 🦈 <span>Shark Tank</span>
-							</p>
-						</div>
-					</div>
-					<div className={classes.questions}>
+					<NeverBox />
+					<div>
 						<p className={classes.question}>Totally async</p>
 						<p className={classes.answer}>
 							Don't like meetings? We don't either; so much so that we've outlawed them completely.

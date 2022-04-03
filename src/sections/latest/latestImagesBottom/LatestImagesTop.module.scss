@@ -1,0 +1,14 @@
+.box-container {
+	@media (min-width: 40rem) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.box {
+		max-width: 40rem;
+		margin: var(--spacer-4) 0;
+		@media (min-width: 40rem) {
+			margin: var(--spacer-4);
+		}
+	}
+}

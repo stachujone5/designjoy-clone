@@ -9,7 +9,7 @@ import img3 from '../../images/ScopeImages3.svg'
 import img4 from '../../images/ScopeImages4.svg'
 import img5 from '../../images/ScopeImages5.svg'
 import img6 from '../../images/ScopeImages6.svg'
-import { ScopeTable } from '../../components/scope_table/ScopeTable'
+import { ScopeTable } from './scope_table/ScopeTable'
 
 export const ScopeOfWork = () => {
 	return (

@@ -1,5 +1,5 @@
-import { SectionHeader } from '../section_header/SectionHeader'
-import scope3 from '../../images/Scope3.svg'
+import { SectionHeader } from '../../../components/section_header/SectionHeader'
+import scope3 from '../../../images/Scope3.svg'
 import classes from './ScopeTable.module.scss'
 
 const items = [
