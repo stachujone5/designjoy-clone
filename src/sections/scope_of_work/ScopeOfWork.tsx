@@ -3,13 +3,13 @@ import classes from './ScopeOfWork.module.scss'
 import divider from '../../images/ScopeDivider.svg'
 import scope1 from '../../images/Scope1.svg'
 import scope2 from '../../images/Scope2.svg'
-import scope3 from '../../images/Scope3.svg'
 import img1 from '../../images/ScopeImages1.svg'
 import img2 from '../../images/ScopeImages2.svg'
 import img3 from '../../images/ScopeImages3.svg'
 import img4 from '../../images/ScopeImages4.svg'
 import img5 from '../../images/ScopeImages5.svg'
 import img6 from '../../images/ScopeImages6.svg'
+import { ScopeTable } from '../../components/scope_table/ScopeTable'
 
 export const ScopeOfWork = () => {
 	return (
@@ -29,6 +29,7 @@ export const ScopeOfWork = () => {
 						<img src={img6} alt='' />
 					</div>
 				</div>
+				<ScopeTable />
 			</div>
 			<img src={divider} alt='' className={`${classes.decoration} ${classes.d1}`} />
 			<img src={scope1} alt='' className={`${classes.decoration} ${classes.d2}`} />

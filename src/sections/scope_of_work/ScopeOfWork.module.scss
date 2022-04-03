@@ -35,6 +35,8 @@
 		position: relative;
 		padding: var(--spacer-8) var(--spacer-4);
 		background-color: var(--clr-header);
+		margin-bottom: var(--spacer-8);
+
 		.d3 {
 			position: absolute;
 			top: 0;
@@ -46,12 +48,20 @@
 			@media (min-width: 40rem) {
 				width: 40%;
 			}
+			z-index: 1;
 		}
 		h2 {
 			font-weight: 900;
 			font-size: var(--fz-8);
 			margin-top: var(--spacer-5);
 			text-align: left;
+
+			@media (min-width: 70rem) {
+				margin-top: var(--spacer-3);
+			}
+			@media (min-width: 77rem) {
+				margin-top: 0;
+			}
 		}
 
 		p {
