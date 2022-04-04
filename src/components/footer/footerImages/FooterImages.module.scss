@@ -1,0 +1,35 @@
+.images {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: var(--spacer-8) 0;
+
+	.img {
+		display: flex;
+		justify-content: center;
+		margin-top: var(--spacer-2);
+	}
+
+	.span {
+		transform: translateX(50%);
+	}
+
+	img {
+		width: 50%;
+	}
+
+	@media (min-width: 60rem) {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+		.span {
+			transform: translateX(0);
+		}
+
+		.img {
+			margin: 0;
+		}
+
+		img {
+			width: 70%;
+		}
+	}
+}

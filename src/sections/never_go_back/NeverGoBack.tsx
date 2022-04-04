@@ -7,7 +7,7 @@ import { NeverBox } from './never_box/NeverBox'
 
 export const NeverGoBack = () => {
 	return (
-		<section className={classes.never}>
+		<section className={classes.never} id='never'>
 			<div className='container'>
 				<SectionHeader
 					h1="It's “you'll never go back” better"

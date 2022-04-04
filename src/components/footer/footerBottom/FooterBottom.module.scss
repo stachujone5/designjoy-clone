@@ -1,0 +1,50 @@
+.box {
+	.logo {
+		display: flex;
+		img {
+			width: 50%;
+			max-width: 10rem;
+		}
+	}
+
+	.country {
+		display: flex;
+		margin: var(--spacer-5) 0;
+		img {
+			width: 10%;
+			margin-right: var(--spacer-2);
+			max-width: 3rem;
+		}
+
+		p {
+			max-width: 20rem;
+			text-align: left;
+			font-weight: 100;
+		}
+	}
+
+	.links {
+		width: 80%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		text-align: left;
+		gap: var(--spacer-2);
+		font-size: var(--fz-05);
+
+		a {
+			transition: color 0.5s;
+			&:hover {
+				color: var(--clr-nav-hover);
+			}
+		}
+	}
+
+	@media (min-width: 60rem) {
+		display: grid;
+		grid-template-columns: 1fr 2fr 2fr;
+
+		.links {
+			margin-left: auto;
+		}
+	}
+}

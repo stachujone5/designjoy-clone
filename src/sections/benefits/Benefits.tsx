@@ -13,7 +13,7 @@ import classes from './Benefits.module.scss'
 
 export const Benefits = () => {
 	return (
-		<section className={classes.benefits}>
+		<section className={classes.benefits} id='benefits'>
 			<div className='container'>
 				<div className={classes.img}>
 					<img src={benefits1} alt='' />

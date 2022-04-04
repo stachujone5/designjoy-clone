@@ -7,7 +7,7 @@ import { SectionHeader } from '../../components/section_header/SectionHeader'
 
 export const WhyUs = () => {
 	return (
-		<section className={classes['why-us']}>
+		<section className={classes['why-us']} id='why-us'>
 			<div className='container'>
 				<SectionHeader
 					h1="We didn't reinvent the wheel, just design"

@@ -12,13 +12,13 @@ export const FaqItem = ({ question, answer }: FaqItemProps) => {
 
 	return (
 		<div className={classes.item}>
-			<div className={classes.top}>
+			<div
+				className={classes.top}
+				onClick={() => {
+					setIsActive(prevState => !prevState)
+				}}>
 				<p>{question}</p>
-				<button
-					className={isActive ? `${classes.active}` : ''}
-					onClick={() => {
-						setIsActive(prevState => !prevState)
-					}}>
+				<button className={isActive ? `${classes.active}` : ''}>
 					<IoIosArrowDown />
 				</button>
 			</div>

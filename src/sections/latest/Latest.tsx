@@ -8,7 +8,7 @@ import { LatestImagesBottom } from './latestImagesTop/LatestImagesBottom'
 
 export const Latest = () => {
 	return (
-		<section className={classes.latest}>
+		<section className={classes.latest} id='projects'>
 			<div className='container'>
 				<SectionHeader h1='Recent work' h2='Award winning designs, and nothing less.' />
 				<div className={classes.btn}>

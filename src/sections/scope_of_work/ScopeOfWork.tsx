@@ -13,7 +13,7 @@ import { ScopeTable } from './scope_table/ScopeTable'
 
 export const ScopeOfWork = () => {
 	return (
-		<section className={classes.work}>
+		<section className={classes.work} id='work'>
 			<div className='container'>
 				<div className={classes.box}>
 					<img className={classes.d3} src={scope2} alt='' />

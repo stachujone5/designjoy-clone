@@ -52,7 +52,7 @@ const FAQS = [
 
 export const Faq = () => {
 	return (
-		<section className={classes.faq}>
+		<section className={classes.faq} id='faq'>
 			<div className='container'>
 				<SectionHeader h1='FAQs' />
 				<div className={classes.box}>

@@ -9,6 +9,7 @@ import { ScopeOfWork } from './sections/scope_of_work/ScopeOfWork'
 import { Welcome } from './sections/welcome/Welcome'
 import { WhyUs } from './sections/why_us/WhyUs'
 import { Faq } from './sections/faq/Faq'
+import { Footer } from './components/footer/Footer'
 
 export const App = () => {
 	return (
@@ -26,6 +27,7 @@ export const App = () => {
 				<Pricing />
 				<Faq />
 			</main>
+			<Footer />
 		</>
 	)
 }

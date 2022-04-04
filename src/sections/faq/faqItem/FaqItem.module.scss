@@ -7,11 +7,12 @@
 		font-weight: 700;
 		font-size: var(--fz-2);
 		margin-bottom: var(--spacer-2);
+		cursor: pointer;
 
 		svg {
 			font-size: var(--fz-3);
 			transition: transform 0.5s;
-			transform: translateY(-35%);
+			transform: translateY(-35%) rotate(0deg);
 			margin-left: var(--spacer-1);
 		}
 		.active {
