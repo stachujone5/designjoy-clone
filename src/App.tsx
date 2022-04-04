@@ -8,6 +8,7 @@ import { ProjectsSlider } from './sections/projects_slider/ProjectsSlider'
 import { ScopeOfWork } from './sections/scope_of_work/ScopeOfWork'
 import { Welcome } from './sections/welcome/Welcome'
 import { WhyUs } from './sections/why_us/WhyUs'
+import { Faq } from './sections/faq/Faq'
 
 export const App = () => {
 	return (
@@ -23,6 +24,7 @@ export const App = () => {
 				<Latest />
 				<ScopeOfWork />
 				<Pricing />
+				<Faq />
 			</main>
 		</>
 	)
