@@ -1,4 +1,4 @@
-# App to search for NBA players build in react
+# Designjoy clone
 
 The most time consuming project that I've worked on so far. There are not many 'Reactive' things, although there were components that took me some time do like those sliders in welcome section.
 
