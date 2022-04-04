@@ -1,6 +1,6 @@
 # Designjoy clone
 
-The most time consuming project that I've worked on so far. There are not many 'Reactive' things, although there were components that took me some time do like those sliders in welcome section.
+Clone of designjoy website built in react. There are not many 'Reactive' things, although there were components that took me some time do like those sliders in welcome section.
 
 Original website: [designjoy.co](https://www.designjoy.co/)
 
