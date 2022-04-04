@@ -89,7 +89,6 @@
 
 	@media (min-width: 75rem) {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
 		gap: 0;
 		.item {
 			border-right: 1px solid var(--clr-header);

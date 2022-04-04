@@ -1,6 +1,6 @@
 .pricing {
 	background-color: var(--clr-header);
-	padding: var(--spacer-7) 0 var(--spacer-8);
+	padding: var(--spacer-8) 0 var(--spacer-8);
 	position: relative;
 	overflow: visible;
 
@@ -10,5 +10,39 @@
 		img {
 			max-width: 25rem;
 		}
+	}
+	.decoration {
+		position: absolute;
+		z-index: 100;
+	}
+
+	.d1 {
+		left: 0;
+		top: -0.5%;
+		height: auto;
+		width: 20%;
+		max-width: 10rem;
+
+		@media (min-width: 35rem) {
+			width: 15%;
+			top: -1%;
+		}
+	}
+
+	.d2 {
+		right: 0;
+		top: -0.7%;
+		height: auto;
+		width: 25%;
+		max-width: 10rem;
+	}
+
+	.d3 {
+		top: -0;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 20%;
+		height: auto;
+		max-width: 7rem;
 	}
 }
